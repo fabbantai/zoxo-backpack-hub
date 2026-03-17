@@ -2,11 +2,7 @@ import { Star } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const reviews = [
-<<<<<<< HEAD
   { name: 'Priya S.', city: 'Mumbai', rating: 5, text: 'Impressive quality and design at this price point. My daughter loves her pink princess bag. The free bottle was a nice touch.', product: 'Pink Princess Kids' },
-=======
-  { name: 'Priya S.', city: 'Mumbai', rating: 5, text: 'Amazing quality at this price! My daughter loves her pink princess bag. The free bottle was a nice touch.', product: 'Pink Princess Kids' },
->>>>>>> a18db7b4e9a5177807892220325b9b9d84ba529f
   { name: 'Rahul M.', city: 'Delhi', rating: 4, text: 'Great laptop bag for college. Waterproof material saved my laptop during rain. Highly recommended!', product: 'Teal Laptop Bag' },
   { name: 'Sneha K.', city: 'Bangalore', rating: 5, text: 'The unicorn bag is so cute! My 6-year-old refuses to use any other bag. Very spacious with 4 compartments.', product: 'Unicorn Print Girls' },
   { name: 'Amit P.', city: 'Pune', rating: 4, text: 'Professional looking grey bag. Perfect for office and college. Good padding for laptop protection.', product: 'Grey Executive' },
@@ -18,11 +14,7 @@ export default function CustomerReviews() {
       <div className="zoxo-container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-foreground">What Customers Say</h2>
-<<<<<<< HEAD
           <p className="mt-2 text-muted-foreground">Trusted by students across India</p>
-=======
-          <p className="mt-2 text-muted-foreground">Real reviews from real customers</p>
->>>>>>> a18db7b4e9a5177807892220325b9b9d84ba529f
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {reviews.map((review, i) => (

@@ -25,11 +25,7 @@ export default function BrandBenefits() {
       <div className="zoxo-container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-foreground">Why ZOXO?</h2>
-<<<<<<< HEAD
           <p className="mt-2 text-muted-foreground">Engineered for Everyday Performance.</p>
-=======
-          <p className="mt-2 text-muted-foreground">Built for durability. Designed for you.</p>
->>>>>>> a18db7b4e9a5177807892220325b9b9d84ba529f
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {benefits.map((b, i) => (

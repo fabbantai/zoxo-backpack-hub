@@ -5,15 +5,9 @@ import categoryTravel from '@/assets/category-travel.jpg';
 import { motion } from 'framer-motion';
 
 const categoriesData = [
-<<<<<<< HEAD
   { name: 'Kids Collection', slug: 'kids-backpacks', image: categoryKids, count: 2 },
   { name: 'College Essentials', slug: 'college-backpacks', image: categoryCollege, count: 2 },
   { name: 'Travel & Work Bags', slug: 'laptop-backpacks', image: categoryTravel, count: 2 },
-=======
-  { name: 'Kids Bags', slug: 'kids-backpacks', image: categoryKids, count: 2 },
-  { name: 'College Bags', slug: 'college-backpacks', image: categoryCollege, count: 2 },
-  { name: 'Travel & Laptop', slug: 'laptop-backpacks', image: categoryTravel, count: 2 },
->>>>>>> a18db7b4e9a5177807892220325b9b9d84ba529f
 ];
 
 export default function CategorySection() {
@@ -22,11 +16,7 @@ export default function CategorySection() {
       <div className="zoxo-container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-foreground">Shop by Category</h2>
-<<<<<<< HEAD
           <p className="mt-2 text-muted-foreground">Explore collections crafted for every lifestyle</p>
-=======
-          <p className="mt-2 text-muted-foreground">Find the perfect bag for every need</p>
->>>>>>> a18db7b4e9a5177807892220325b9b9d84ba529f
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {categoriesData.map((cat, i) => (
