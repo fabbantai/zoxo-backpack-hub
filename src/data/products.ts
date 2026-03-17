@@ -1,4 +1,4 @@
-import tealBag from '@/assets/products/teal-laptop-bag.jpg';
+import tealBag from '@/assets/products/backpacckforkidsboysandgirls.png';
 import greyBag from '@/assets/products/grey-executive-bag.jpg';
 import pinkBag from '@/assets/products/pink-princess-kids.jpg';
 import unicornBag from '@/assets/products/unicorn-girls-bag.jpg';
