@@ -1,14 +1,12 @@
 import { useParams, Link } from 'react-router-dom';
 import { getProductBySlug, products } from '@/data/products';
-import { useCart } from '@/context/CartContext';
-import { Star, ShoppingBag, Truck, Shield, RotateCcw, Check } from 'lucide-react';
+import { Star, ExternalLink, Truck, Shield, RotateCcw, Check } from 'lucide-react';
 import ProductCard from '@/components/product/ProductCard';
 import { motion } from 'framer-motion';
 
 export default function ProductDetail() {
   const { slug } = useParams();
   const product = getProductBySlug(slug || '');
-  const { addToCart } = useCart();
 
   if (!product) {
     return (
@@ -23,7 +21,6 @@ export default function ProductDetail() {
 
   return (
     <>
-      {/* Breadcrumb */}
       <div className="zoxo-container px-4 py-4">
         <nav className="flex items-center gap-2 text-xs text-muted-foreground">
           <Link to="/" className="hover:text-foreground">Home</Link>
@@ -36,39 +33,18 @@ export default function ProductDetail() {
 
       <div className="zoxo-container px-4 pb-16">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
-          {/* Image */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="aspect-square rounded-2xl overflow-hidden bg-muted"
-          >
-            <img
-              src={product.images[0]}
-              alt={product.title}
-              className="w-full h-full object-cover"
-            />
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="aspect-square rounded-2xl overflow-hidden bg-muted">
+            <img src={product.images[0]} alt={product.title} className="w-full h-full object-cover" />
           </motion.div>
 
-          {/* Info */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-          >
+          <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
             <div className="flex items-center gap-2 mb-2">
-              {product.bestSeller && (
-                <span className="zoxo-badge bg-accent text-accent-foreground">BESTSELLER</span>
-              )}
-              {product.tags.includes('free-bottle') && (
-                <span className="zoxo-badge bg-foreground text-background">FREE BOTTLE</span>
-              )}
+              {product.bestSeller && <span className="zoxo-badge bg-accent text-accent-foreground">BESTSELLER</span>}
+              {product.tags.includes('free-bottle') && <span className="zoxo-badge bg-foreground text-background">FREE BOTTLE</span>}
             </div>
 
-            <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight text-foreground leading-tight">
-              {product.title}
-            </h1>
+            <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight text-foreground leading-tight">{product.title}</h1>
 
-            {/* Rating */}
             <div className="flex items-center gap-2 mt-3">
               <div className="flex text-yellow-400">
                 {Array.from({ length: 5 }).map((_, i) => (
@@ -78,7 +54,6 @@ export default function ProductDetail() {
               <span className="text-sm text-muted-foreground">{product.rating} ({product.reviews.toLocaleString()} reviews)</span>
             </div>
 
-            {/* Price */}
             <div className="flex items-center gap-3 mt-4">
               <span className="text-3xl font-extrabold text-foreground">₹{product.price}</span>
               <span className="text-lg text-muted-foreground line-through">₹{product.mrp}</span>
@@ -88,7 +63,6 @@ export default function ProductDetail() {
 
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed">{product.description}</p>
 
-            {/* Quick specs */}
             <div className="grid grid-cols-2 gap-3 mt-6">
               {[
                 { label: 'Capacity', value: product.capacity },
@@ -103,24 +77,17 @@ export default function ProductDetail() {
               ))}
             </div>
 
-            {/* Actions */}
-            <div className="flex gap-3 mt-8">
-              <button
-                onClick={() => addToCart(product)}
-                className="flex-1 flex items-center justify-center gap-2 bg-foreground text-background py-4 rounded-xl font-semibold text-sm hover:opacity-90 transition-opacity"
+            <div className="mt-8">
+              <a
+                href={product.meeshoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full bg-accent text-accent-foreground py-4 rounded-xl font-semibold text-sm hover:opacity-90 transition-opacity"
               >
-                <ShoppingBag size={18} /> Add to Cart
-              </button>
-              <Link
-                to="/checkout"
-                onClick={() => addToCart(product)}
-                className="flex-1 flex items-center justify-center gap-2 bg-accent text-accent-foreground py-4 rounded-xl font-semibold text-sm hover:opacity-90 transition-opacity"
-              >
-                Buy Now
-              </Link>
+                <ExternalLink size={18} /> Shop Now on Meesho
+              </a>
             </div>
 
-            {/* Trust badges */}
             <div className="flex flex-wrap gap-4 mt-6 text-xs text-muted-foreground">
               <span className="flex items-center gap-1"><Truck size={14} /> Free Delivery ₹499+</span>
               <span className="flex items-center gap-1"><Shield size={14} /> Secure Payment</span>
@@ -129,7 +96,6 @@ export default function ProductDetail() {
           </motion.div>
         </div>
 
-        {/* Features */}
         <div className="mt-16 grid lg:grid-cols-2 gap-12">
           <div>
             <h2 className="text-xl font-bold text-foreground mb-4">Features</h2>
@@ -155,7 +121,6 @@ export default function ProductDetail() {
           </div>
         </div>
 
-        {/* Related */}
         {related.length > 0 && (
           <div className="mt-16">
             <h2 className="text-2xl font-extrabold tracking-tighter text-foreground mb-6">You May Also Like</h2>
@@ -172,15 +137,16 @@ export default function ProductDetail() {
           <span className="text-lg font-extrabold text-foreground">₹{product.price}</span>
           <span className="text-xs text-muted-foreground line-through ml-2">₹{product.mrp}</span>
         </div>
-        <button
-          onClick={() => addToCart(product)}
-          className="bg-accent text-accent-foreground px-6 py-3 rounded-xl font-semibold text-sm hover:opacity-90 transition-opacity"
+        <a
+          href={product.meeshoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-accent text-accent-foreground px-6 py-3 rounded-xl font-semibold text-sm hover:opacity-90 transition-opacity flex items-center gap-2"
         >
-          Add to Cart
-        </button>
+          <ExternalLink size={14} /> Shop on Meesho
+        </a>
       </div>
 
-      {/* JSON-LD Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -196,6 +162,7 @@ export default function ProductDetail() {
               price: product.price,
               priceCurrency: 'INR',
               availability: product.inStock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
+              url: product.meeshoUrl,
             },
             aggregateRating: {
               '@type': 'AggregateRating',

@@ -1,11 +1,8 @@
 import { Link } from 'react-router-dom';
-import { Star, ShoppingBag } from 'lucide-react';
+import { Star, ExternalLink } from 'lucide-react';
 import type { Product } from '@/data/products';
-import { useCart } from '@/context/CartContext';
 
 export default function ProductCard({ product }: { product: Product }) {
-  const { addToCart } = useCart();
-
   return (
     <div className="group relative flex flex-col gap-3 zoxo-card p-2">
       <Link to={`/p/${product.slug}`} className="relative aspect-[4/5] overflow-hidden rounded-lg bg-muted">
@@ -49,12 +46,14 @@ export default function ProductCard({ product }: { product: Product }) {
           </div>
           <span className="text-[11px] text-muted-foreground">{product.reviews.toLocaleString()} reviews</span>
         </div>
-        <button
-          onClick={() => addToCart(product)}
-          className="mt-3 flex items-center justify-center gap-2 w-full bg-foreground text-background rounded-lg py-2.5 text-xs font-semibold hover:opacity-90 transition-opacity"
+        <a
+          href={product.meeshoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 flex items-center justify-center gap-2 w-full bg-accent text-accent-foreground rounded-lg py-2.5 text-xs font-semibold hover:opacity-90 transition-opacity"
         >
-          <ShoppingBag size={14} /> Add to Cart
-        </button>
+          <ExternalLink size={14} /> Shop Now on Meesho
+        </a>
       </div>
     </div>
   );

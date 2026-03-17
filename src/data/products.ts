@@ -233,6 +233,7 @@ export const products: Product[] = [
       'Ideal For': 'Nursery, LKG, UKG, Primary School',
       'Age Group': '3-10 years',
     },
+    meeshoUrl: 'https://www.meesho.com/unicorn-printed-school-bag-for-girls-4-compartment-kids-backpack-with-free-water-bottle-lightweight-waterproof-nursery-lkg-ukg-primary-school-bag-ages-310-years/p/cryltg',
   },
 ];
 
