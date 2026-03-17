@@ -31,6 +31,7 @@ export interface Product {
   bestSeller: boolean;
   features: string[];
   specs: Record<string, string>;
+  meeshoUrl: string;
 }
 
 export const products: Product[] = [
@@ -82,6 +83,7 @@ export const products: Product[] = [
       'Closure': 'Zipper',
       'Ideal For': 'School, College, Travel',
     },
+    meeshoUrl: 'https://www.meesho.com/zoxo-35l-teal-green-laptop-backpack-with-free-bottle-waterproof-school-college-bag-for-boys-girls-156-inch-laptop-bag-stylish-unisex-travel-backpack/p/cqjvy7',
   },
   {
     id: 'zoxo-grey-executive-35l',
@@ -131,6 +133,7 @@ export const products: Product[] = [
       'Closure': 'Zipper',
       'Ideal For': 'College, Office, Travel',
     },
+    meeshoUrl: 'https://www.meesho.com/zoxo-backpack-school-college-travel-office-bag-35l-laptop-backpack-grey-with-free-bottle/p/bez8fp',
   },
   {
     id: 'zoxo-pink-princess-kids',
@@ -180,6 +183,7 @@ export const products: Product[] = [
       'Ideal For': 'Nursery, LKG, UKG, Primary School',
       'Age Group': '2-6 years',
     },
+    meeshoUrl: 'https://www.meesho.com/pink-princess-school-bag-for-girls-cute-cartoon-kids-backpack-with-free-water-bottle-girls-pink-bag-for-baby-toddler-nursery-lkg-ukg-primary-school-lightweight-durable/p/bdzoc3',
   },
   {
     id: 'zoxo-unicorn-girls',
@@ -229,6 +233,7 @@ export const products: Product[] = [
       'Ideal For': 'Nursery, LKG, UKG, Primary School',
       'Age Group': '3-10 years',
     },
+    meeshoUrl: 'https://www.meesho.com/unicorn-printed-school-bag-for-girls-4-compartment-kids-backpack-with-free-water-bottle-lightweight-waterproof-nursery-lkg-ukg-primary-school-bag-ages-310-years/p/cryltg',
   },
 ];
 
