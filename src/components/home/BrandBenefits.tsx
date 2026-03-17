@@ -2,21 +2,12 @@ import { Shield, Truck, RotateCcw, Award, Droplets, HeadphonesIcon } from 'lucid
 import { motion } from 'framer-motion';
 
 const benefits = [
-<<<<<<< HEAD
   { icon: Truck, title: 'Smart Design', desc: 'Built for better organization & daily use' },
   { icon: Shield, title: 'Premium Build', desc: 'High-quality materials for long durability' },
   { icon: RotateCcw, title: 'Comfort First', desc: 'Ergonomic design for all-day comfort' },
   { icon: Award, title: 'Modern Style', desc: 'Clean & minimal look for every occasion' },
   { icon: Droplets, title: 'Water Resistant', desc: 'Protects your essentials from rain' },
   { icon: HeadphonesIcon, title: 'Everyday Use', desc: 'Perfect for school, college & travel' },
-=======
-  { icon: Truck, title: 'Free Delivery', desc: 'On orders above ₹499' },
-  { icon: Shield, title: 'Secure Payment', desc: 'UPI, Cards, Net Banking' },
-  { icon: RotateCcw, title: 'Easy Returns', desc: '7-day return policy' },
-  { icon: Award, title: 'Premium Quality', desc: 'Durable materials used' },
-  { icon: Droplets, title: 'Waterproof', desc: 'Water resistant bags' },
-  { icon: HeadphonesIcon, title: '24/7 Support', desc: 'WhatsApp support' },
->>>>>>> a18db7b4e9a5177807892220325b9b9d84ba529f
 ];
 
 export default function BrandBenefits() {
