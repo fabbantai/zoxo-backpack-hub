@@ -1,7 +1,7 @@
 import tealBag from '@/assets/products/backpacckforkidsboysandgirls.png';
-import greyBag from '@/assets/products/grey-executive-bag.jpg';
-import pinkBag from '@/assets/products/pink-princess-kids.jpg';
-import unicornBag from '@/assets/products/unicorn-girls-bag.jpg';
+import greyBag from '@/assets/products/greybagforunisexnew.png';
+import pinkBag from '@/assets/products/princessschoolbagforgirls.png';
+import unicornBag from '@/assets/products/purplebagsunicorn.png';
 
 export interface Product {
   id: string;
