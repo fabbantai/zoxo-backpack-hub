@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import heroBanner from '@/assets/zoxohero.jpg';
+import heroBanner from '@/assets/zoxohero.png';
 
 export default function HeroBanner() {
   return (
