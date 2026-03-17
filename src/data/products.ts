@@ -133,6 +133,7 @@ export const products: Product[] = [
       'Closure': 'Zipper',
       'Ideal For': 'College, Office, Travel',
     },
+    meeshoUrl: 'https://www.meesho.com/zoxo-backpack-school-college-travel-office-bag-35l-laptop-backpack-grey-with-free-bottle/p/bez8fp',
   },
   {
     id: 'zoxo-pink-princess-kids',
