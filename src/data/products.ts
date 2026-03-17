@@ -183,6 +183,7 @@ export const products: Product[] = [
       'Ideal For': 'Nursery, LKG, UKG, Primary School',
       'Age Group': '2-6 years',
     },
+    meeshoUrl: 'https://www.meesho.com/pink-princess-school-bag-for-girls-cute-cartoon-kids-backpack-with-free-water-bottle-girls-pink-bag-for-baby-toddler-nursery-lkg-ukg-primary-school-lightweight-durable/p/bdzoc3',
   },
   {
     id: 'zoxo-unicorn-girls',
