@@ -28,9 +28,9 @@ export default function Header() {
       <div className="zoxo-container flex items-center justify-between h-16 px-4">
         <Link to="/" className="flex items-center gap-2">
           <span className="text-2xl font-extrabold tracking-tighter text-foreground">ZOXO</span>
-          <span className="hidden sm:inline text-[10px] font-medium text-muted-foreground uppercase tracking-widest">
-            Backpacks
-          </span>
+         <span className="text-[9px] sm:text-[10px] font-medium text-muted-foreground uppercase tracking-widest">
+  Backpacks
+</span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8">
