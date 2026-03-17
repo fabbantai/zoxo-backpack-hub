@@ -58,11 +58,11 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">Get in Touch</h4>
             <div className="flex flex-col gap-3">
-              <a href="mailto:support@zoxo.in" className="flex items-center gap-2 text-sm opacity-70 hover:opacity-100">
+              <a href="mailto:zoxoenterprises@gmail.com" className="flex items-center gap-2 text-sm opacity-70 hover:opacity-100">
                 <Mail size={14} /> support@zoxo.in
               </a>
-              <a href="tel:+91XXXXXXXXXX" className="flex items-center gap-2 text-sm opacity-70 hover:opacity-100">
-                <Phone size={14} /> +91 XXXXX XXXXX
+              <a href="tel:+919372448193" className="flex items-center gap-2 text-sm opacity-70 hover:opacity-100">
+                <Phone size={14} /> +91 9372448193
               </a>
               <span className="flex items-center gap-2 text-sm opacity-70">
                 <MapPin size={14} /> India
