@@ -22,7 +22,11 @@ export default function HeroBanner() {
               for Every Journey
             </h1>
             <p className="mt-4 text-base md:text-lg text-muted-foreground leading-relaxed max-w-md">
+<<<<<<< HEAD
               Modern, durable backpacks designed for everyday use — from classrooms to travel. Built for comfort, style, and performance.
+=======
+              Stylish, durable & affordable bags for school, college and travel. Starting at just ₹399.
+>>>>>>> a18db7b4e9a5177807892220325b9b9d84ba529f
             </p>
             <div className="flex flex-wrap gap-3 mt-8">
               <Link
@@ -39,10 +43,17 @@ export default function HeroBanner() {
               </Link>
             </div>
             <div className="mt-8 flex items-center gap-6 text-xs text-muted-foreground">
+<<<<<<< HEAD
   <span>✔ Premium Quality Materials</span>
   <span>✔ Designed for Daily Comfort</span>
   <span>✔ Built for School, College & Travel</span>
 </div>
+=======
+              <span className="flex items-center gap-1">🚚 Free Delivery ₹499+</span>
+              <span className="flex items-center gap-1">🍶 Free Bottle</span>
+              <span className="flex items-center gap-1">↩️ Easy Returns</span>
+            </div>
+>>>>>>> a18db7b4e9a5177807892220325b9b9d84ba529f
           </motion.div>
 
           <motion.div

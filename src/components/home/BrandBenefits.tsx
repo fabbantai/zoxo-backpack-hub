@@ -2,12 +2,21 @@ import { Shield, Truck, RotateCcw, Award, Droplets, HeadphonesIcon } from 'lucid
 import { motion } from 'framer-motion';
 
 const benefits = [
+<<<<<<< HEAD
   { icon: Truck, title: 'Smart Design', desc: 'Built for better organization & daily use' },
   { icon: Shield, title: 'Premium Build', desc: 'High-quality materials for long durability' },
   { icon: RotateCcw, title: 'Comfort First', desc: 'Ergonomic design for all-day comfort' },
   { icon: Award, title: 'Modern Style', desc: 'Clean & minimal look for every occasion' },
   { icon: Droplets, title: 'Water Resistant', desc: 'Protects your essentials from rain' },
   { icon: HeadphonesIcon, title: 'Everyday Use', desc: 'Perfect for school, college & travel' },
+=======
+  { icon: Truck, title: 'Free Delivery', desc: 'On orders above ₹499' },
+  { icon: Shield, title: 'Secure Payment', desc: 'UPI, Cards, Net Banking' },
+  { icon: RotateCcw, title: 'Easy Returns', desc: '7-day return policy' },
+  { icon: Award, title: 'Premium Quality', desc: 'Durable materials used' },
+  { icon: Droplets, title: 'Waterproof', desc: 'Water resistant bags' },
+  { icon: HeadphonesIcon, title: '24/7 Support', desc: 'WhatsApp support' },
+>>>>>>> a18db7b4e9a5177807892220325b9b9d84ba529f
 ];
 
 export default function BrandBenefits() {
@@ -16,7 +25,11 @@ export default function BrandBenefits() {
       <div className="zoxo-container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-foreground">Why ZOXO?</h2>
+<<<<<<< HEAD
           <p className="mt-2 text-muted-foreground">Engineered for Everyday Performance.</p>
+=======
+          <p className="mt-2 text-muted-foreground">Built for durability. Designed for you.</p>
+>>>>>>> a18db7b4e9a5177807892220325b9b9d84ba529f
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {benefits.map((b, i) => (

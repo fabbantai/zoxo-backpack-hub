@@ -20,7 +20,11 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
       <div className="bg-primary text-primary-foreground text-center py-1.5 text-xs font-medium tracking-wide">
+<<<<<<< HEAD
         Smart Backpacks for Modern Students & Professionals
+=======
+        India's Most Loved Backpack Brand — Trusted by 50,000+ Students Nationwide
+>>>>>>> a18db7b4e9a5177807892220325b9b9d84ba529f
       </div>
 
       <div className="zoxo-container flex items-center justify-between h-16 px-4">
