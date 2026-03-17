@@ -83,6 +83,7 @@ export const products: Product[] = [
       'Closure': 'Zipper',
       'Ideal For': 'School, College, Travel',
     },
+    meeshoUrl: 'https://www.meesho.com/zoxo-35l-teal-green-laptop-backpack-with-free-bottle-waterproof-school-college-bag-for-boys-girls-156-inch-laptop-bag-stylish-unisex-travel-backpack/p/cqjvy7',
   },
   {
     id: 'zoxo-grey-executive-35l',
