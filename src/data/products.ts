@@ -31,6 +31,7 @@ export interface Product {
   bestSeller: boolean;
   features: string[];
   specs: Record<string, string>;
+  meeshoUrl: string;
 }
 
 export const products: Product[] = [
