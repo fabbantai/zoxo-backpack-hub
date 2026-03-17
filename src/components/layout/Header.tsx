@@ -19,18 +19,18 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
+      
+      {/* Top Banner */}
       <div className="bg-primary text-primary-foreground text-center py-1.5 text-xs font-medium tracking-wide">
-<<<<<<< HEAD
         Smart Backpacks for Modern Students & Professionals
-=======
-        India's Most Loved Backpack Brand — Trusted by 50,000+ Students Nationwide
->>>>>>> a18db7b4e9a5177807892220325b9b9d84ba529f
       </div>
 
       <div className="zoxo-container flex items-center justify-between h-16 px-4">
         <Link to="/" className="flex items-center gap-2">
           <span className="text-2xl font-extrabold tracking-tighter text-foreground">ZOXO</span>
-          <span className="hidden sm:inline text-[10px] font-medium text-muted-foreground uppercase tracking-widest">Backpacks</span>
+          <span className="hidden sm:inline text-[10px] font-medium text-muted-foreground uppercase tracking-widest">
+            Backpacks
+          </span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8">
