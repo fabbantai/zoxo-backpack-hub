@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
       <div className="bg-primary text-primary-foreground text-center py-1.5 text-xs font-medium tracking-wide">
-        FREE DELIVERY on orders above ₹499 🎒 | Free Water Bottle with every bag!
+        India's Most Loved Backpack Brand — Trusted by 50,000+ Students Nationwide
       </div>
 
       <div className="zoxo-container flex items-center justify-between h-16 px-4">
