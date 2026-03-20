@@ -1,85 +1,36 @@
-import { Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
+import { useParams } from "react-router-dom";
+import products from "@/data/products";
 
-export default function Contact() {
+export default function CityPage() {
+  const { city } = useParams();
+
+  const formattedCity =
+    city?.charAt(0).toUpperCase() + city?.slice(1);
+
   return (
     <div className="zoxo-section">
-      <div className="zoxo-container max-w-3xl">
-        
-        {/* Heading */}
-        <h1 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-foreground text-center">
-          Contact Us
+      <div className="zoxo-container">
+
+        {/* SEO Heading */}
+        <h1 className="text-3xl md:text-4xl font-extrabold text-foreground">
+          Best Backpacks in {formattedCity} (2026)
         </h1>
-        <p className="mt-2 text-center text-muted-foreground">
-          Have questions? Reach out to us anytime.
+
+        <p className="mt-3 text-muted-foreground max-w-2xl">
+          Discover the best backpacks in {formattedCity} for school, college, and travel. Affordable, stylish, and durable bags starting under ₹500.
         </p>
 
-        {/* Contact Cards */}
-        <div className="mt-12 grid gap-6">
-
-          {/* Email */}
-          <a
-            href="mailto:zoxoenterprises@gmail.com"
-            className="flex items-center gap-4 p-5 rounded-2xl bg-muted hover:bg-secondary transition-colors"
-          >
-            <div className="p-3 bg-background rounded-xl">
-              <Mail size={20} className="text-accent" />
+        {/* Product Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
+          {products.map((product) => (
+            <div key={product.id} className="bg-background p-4 rounded-xl border border-border">
+              <img src={product.image} alt={product.name} className="w-full h-40 object-cover rounded-lg" />
+              <h3 className="text-sm font-semibold mt-3">{product.name}</h3>
+              <p className="text-sm text-muted-foreground">₹{product.price}</p>
             </div>
-            <div>
-              <p className="text-xs text-muted-foreground">Email</p>
-              <p className="text-sm font-semibold text-foreground">
-                zoxoenterprises@gmail.com
-              </p>
-            </div>
-          </a>
-
-          {/* Phone */}
-          <a
-            href="tel:+919372448193"
-            className="flex items-center gap-4 p-5 rounded-2xl bg-muted hover:bg-secondary transition-colors"
-          >
-            <div className="p-3 bg-background rounded-xl">
-              <Phone size={20} className="text-accent" />
-            </div>
-            <div>
-              <p className="text-xs text-muted-foreground">Phone</p>
-              <p className="text-sm font-semibold text-foreground">
-                +91 93724 48193
-              </p>
-            </div>
-          </a>
-
-          {/* WhatsApp */}
-          <a
-            href="https://wa.me/919372448193"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-4 p-5 rounded-2xl bg-muted hover:bg-secondary transition-colors"
-          >
-            <div className="p-3 bg-background rounded-xl">
-              <MessageCircle size={20} className="text-accent" />
-            </div>
-            <div>
-              <p className="text-xs text-muted-foreground">WhatsApp</p>
-              <p className="text-sm font-semibold text-foreground">
-                Chat on WhatsApp
-              </p>
-            </div>
-          </a>
-
-          {/* Location */}
-          <div className="flex items-center gap-4 p-5 rounded-2xl bg-muted">
-            <div className="p-3 bg-background rounded-xl">
-              <MapPin size={20} className="text-accent" />
-            </div>
-            <div>
-              <p className="text-xs text-muted-foreground">Location</p>
-              <p className="text-sm font-semibold text-foreground">
-                India
-              </p>
-            </div>
-          </div>
-
+          ))}
         </div>
+
       </div>
     </div>
   );

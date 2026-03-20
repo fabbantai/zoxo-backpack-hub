@@ -17,6 +17,7 @@
     <loc>https://zoxostore.in/contact</loc>
   </url>
 
+  <!-- Categories -->
   <url>
     <loc>https://zoxostore.in/c/kids-backpacks</loc>
   </url>
@@ -27,6 +28,31 @@
 
   <url>
     <loc>https://zoxostore.in/c/laptop-backpacks</loc>
+  </url>
+
+  <!-- City SEO Pages 🔥 -->
+  <url>
+    <loc>https://zoxostore.in/best-backpacks-in-mumbai</loc>
+  </url>
+
+  <url>
+    <loc>https://zoxostore.in/best-backpacks-in-delhi</loc>
+  </url>
+
+  <url>
+    <loc>https://zoxostore.in/best-backpacks-in-bangalore</loc>
+  </url>
+
+  <url>
+    <loc>https://zoxostore.in/best-backpacks-in-hyderabad</loc>
+  </url>
+
+  <url>
+    <loc>https://zoxostore.in/best-backpacks-in-pune</loc>
+  </url>
+
+  <url>
+    <loc>https://zoxostore.in/best-backpacks-in-chennai</loc>
   </url>
 
 </urlset>
