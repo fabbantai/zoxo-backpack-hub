@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import products from "@/data/products";
+import { products } from "@/data/products";
 
 export default function CityPage() {
   const { city } = useParams();
